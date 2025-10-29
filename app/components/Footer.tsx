@@ -79,31 +79,38 @@ const Footer = () => {
                   icon: Twitter,
                   label: "Twitter",
                   gradient: "from-blue-400 to-blue-600",
+                  url: "https://twitter.com/buzzboldmarketing",
                 },
                 {
                   icon: Linkedin,
                   label: "LinkedIn",
                   gradient: "from-blue-600 to-blue-800",
+                  url: "https://linkedin.com/company/buzzboldmarketing",
                 },
                 {
                   icon: Instagram,
                   label: "Instagram",
                   gradient: "from-pink-500 to-purple-600",
+                  url: "https://instagram.com/buzzboldmarketing",
                 },
                 {
                   icon: Facebook,
                   label: "Facebook",
                   gradient: "from-blue-500 to-indigo-600",
+                  url: "https://facebook.com/buzzboldmarketing",
                 },
                 {
                   icon: Youtube,
                   label: "YouTube",
                   gradient: "from-red-500 to-red-700",
+                  url: "https://youtube.com/@buzzboldmarketing",
                 },
               ].map((social, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group relative p-3 rounded-xl bg-white/5 border border-white/10 hover:border-transparent transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >
