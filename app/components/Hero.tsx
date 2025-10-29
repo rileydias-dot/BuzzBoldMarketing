@@ -182,7 +182,7 @@ const Hero = () => {
             {[
               { value: "25 Years", label: "Combined Experience" },
               { value: "100+", label: "Tradesmen Helped" },
-              { value: "7 Days", label: "Average Launch Time" },
+              { value: "Fast", label: "Website Shipping & Deployment" },
               { value: "5-Star", label: "Customer Reviews" },
             ].map((stat, index) => (
               <div

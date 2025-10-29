@@ -182,7 +182,7 @@ const Testimonials = () => {
               "Builders",
               "Roofers",
               "Landscapers",
-              "HVAC",
+              "Carpenters",
             ].map((trade, index) => (
               <div
                 key={index}

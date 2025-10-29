@@ -143,6 +143,39 @@ const Contact = () => {
                   />
                 </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-bold text-gray-900 mb-2">
+                      Are you currently advertising? <span className="text-red-600">*</span>
+                    </label>
+                    <select className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:outline-none transition-colors text-gray-900 appearance-none cursor-pointer">
+                      <option>Select advertising method</option>
+                      <option>Google Ads</option>
+                      <option>Facebook Ads</option>
+                      <option>Instagram Ads</option>
+                      <option>Local Directories</option>
+                      <option>Print Media</option>
+                      <option>Not Currently Advertising</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-bold text-gray-900 mb-2">
+                      What are your goals? <span className="text-red-600">*</span>
+                    </label>
+                    <select className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:outline-none transition-colors text-gray-900 appearance-none cursor-pointer">
+                      <option>Select your goal</option>
+                      <option>Get More Leads</option>
+                      <option>Increase Brand Awareness</option>
+                      <option>Improve Online Presence</option>
+                      <option>Rank Higher on Google</option>
+                      <option>Get More Customer Reviews</option>
+                      <option>Beat Local Competition</option>
+                      <option>All of the Above</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-bold text-gray-900 mb-2">
                     Tell Us About Your Business & Goals
