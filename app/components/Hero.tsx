@@ -102,7 +102,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-32 md:pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-40 md:pt-32"
     >
       {/* Animated gradient orbs */}
       <div ref={gradientRef1} className="blur-gradient-orange top-20 left-20" />
