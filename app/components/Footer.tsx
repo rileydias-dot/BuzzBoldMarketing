@@ -159,7 +159,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6 text-white">Services</h4>
             <ul className="space-y-4">
               {[
-                "High Quality, Fully Responsive Websites",
+                "High Quality Websites",
                 "Local SEO to Dominate",
                 "Account Management",
               ].map((service, index) => (
