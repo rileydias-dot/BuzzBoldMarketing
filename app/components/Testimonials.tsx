@@ -65,7 +65,7 @@ const Testimonials = () => {
       icon: Award,
       title: "Powered by BrightLocal",
       description:
-        "We partner with BrightLocal—the industry standard for local SEO, listing management, and review tools used by top agencies worldwide.",
+        "We partner with BrightLocal, the industry standard for local SEO, listing management, and review tools used by top agencies worldwide.",
       gradient: "from-orange-500 to-red-500",
     },
     {

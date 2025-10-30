@@ -79,7 +79,7 @@ const Services = () => {
       icon: <Target className="w-10 h-10" />,
       title: "Local SEO & Google My Business",
       description:
-        "Dominate local search results and Google Maps with expert SEO and Google Business Profile optimization. We get you in front of customers searching for what you offer—right when they're ready to buy.",
+        "Dominate local search results and Google Maps with expert SEO and Google Business Profile optimization. We get you in front of customers searching for what you offer right when they're ready to buy.",
       gradient: "from-red-500 to-pink-500",
     },
     {
@@ -100,14 +100,14 @@ const Services = () => {
       icon: <TrendingUp className="w-10 h-10" />,
       title: "Social Media Posting",
       description:
-        "Consistent, professional social media posting that keeps your brand visible, builds credibility, and drives traffic to your website—without you lifting a finger.",
+        "Consistent, professional social media posting that keeps your brand visible, builds credibility, and drives traffic to your website without you lifting a finger.",
       gradient: "from-indigo-500 to-blue-500",
     },
     {
       icon: <Palette className="w-10 h-10" />,
       title: "Complete Online Presence Packages",
       description:
-        "Get the full package: website, local SEO, listings, reviews, and social—all managed under one roof. Perfect for businesses ready to own their local market.",
+        "Get the full package: website, local SEO, listings, reviews, and social all managed under one roof. Perfect for businesses ready to own their local market.",
       gradient: "from-blue-500 to-cyan-500",
     },
   ];

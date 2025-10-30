@@ -148,7 +148,7 @@ const Hero = () => {
             className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             We help UK local businesses dominate their market with expert SEO, professional websites,
-            and reputation management that drives real leads—fast.
+            and reputation management that drives real leads fast.
           </p>
 
           {/* CTAs */}

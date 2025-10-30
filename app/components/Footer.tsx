@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               We help UK local businesses grow with professional websites, local SEO, review management,
-              and social posting—powered by BrightLocal&apos;s industry-leading platform.
+              and social posting powered by BrightLocal&apos;s industry-leading platform.
             </p>
             <div className="flex gap-3">
               {[

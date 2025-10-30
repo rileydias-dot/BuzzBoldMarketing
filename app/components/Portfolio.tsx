@@ -13,7 +13,7 @@ const processSteps = [
     id: 1,
     icon: Target,
     title: "Discovery & Strategy",
-    headline: "We Learn Your Business",
+    headline: "We Understand Your Business Needs",
     description:
       "Every business is different. We start with a strategy call to understand your goals, your market, and your competition. Then we build a custom plan designed to get you maximum visibility and leads.",
     gradient: "from-orange-500 to-red-500",
@@ -24,23 +24,23 @@ const processSteps = [
     title: "Build & Optimize",
     headline: "We Build Your Online Presence",
     description:
-      "Whether it's a brand-new website, local SEO setup, or listing management across 100+ directories—we handle the technical heavy lifting. Fast turnaround. Industry-leading tools. Zero hassle.",
+      "Whether it's a brand-new website, local SEO setup, or listing management across 100+ directories, we handle the technical heavy lifting. Fast turnaround. Industry-leading tools. Zero hassle.",
     gradient: "from-red-500 to-pink-500",
   },
   {
     id: 3,
     icon: TrendingUp,
     title: "Launch & Grow",
-    headline: "We Drive Traffic & Leads",
+    headline: "We Review",
     description:
-      "Once you're live, we monitor, optimize, and scale. You'll see more traffic, more reviews, more bookings—and a clear return on your investment. We track it all so you can focus on growing your business.",
+      "Once you're live, we monitor, optimize, and scale. You'll see more traffic, more reviews, more bookings, and a clear return on your investment. We track it all so you can focus on growing your business.",
     gradient: "from-pink-500 to-purple-500",
   },
   {
     id: 4,
     icon: Headset,
     title: "Ongoing Support",
-    headline: "We Stay With You",
+    headline: "We Grow With You",
     description:
       "Marketing isn't set-it-and-forget-it. We provide ongoing support, updates, and optimization to keep you ahead of competitors and top-of-mind with customers.",
     gradient: "from-purple-500 to-indigo-500",
