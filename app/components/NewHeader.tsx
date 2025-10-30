@@ -44,7 +44,6 @@ export default function NewHeader() {
     { label: "Home", target: "#home" },
     { label: "Services", target: "#services" },
     { label: "Portfolio", target: "#portfolio" },
-    { label: "About", target: "#about" },
     { label: "Contact", target: "#contact" },
   ];
 
