@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -17,8 +18,8 @@ import {
   Calendar,
 } from "lucide-react";
 import Logo from "./Logo";
-import { PopupModal } from "react-calendly";
-import ClientOnly from "./ClientOnly";
+
+const CalendlyPopup = dynamic(() => import("./CalendlyPopup"), { ssr: false });
 
 const Footer = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -258,14 +259,11 @@ const Footer = () => {
         </button>
 
         {/* Calendly Popup Modal */}
-        <ClientOnly>
-          <PopupModal
-            url="https://calendly.com/buzzboldmarketing"
-            onModalClose={() => setIsCalendlyOpen(false)}
-            open={isCalendlyOpen}
-            rootElement={document.body}
-          />
-        </ClientOnly>
+        <CalendlyPopup
+          url="https://calendly.com/buzzboldmarketing"
+          open={isCalendlyOpen}
+          onClose={() => setIsCalendlyOpen(false)}
+        />
       </div>
     </footer>
   );
