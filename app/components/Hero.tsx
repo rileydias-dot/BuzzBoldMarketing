@@ -139,7 +139,7 @@ const Hero = () => {
               Get Chosen.
             </span>
             <br />
-            Dominate.
+            Get BuzzBold.
           </h1>
 
           {/* Subtitle */}
