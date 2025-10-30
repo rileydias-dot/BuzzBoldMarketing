@@ -62,31 +62,31 @@ const Testimonials = () => {
 
   const trustPoints = [
     {
-      icon: Award,
-      title: "Powered by BrightLocal",
+      icon: Target,
+      title: "Local Growth Specialists",
       description:
-        "We partner with BrightLocal, the industry standard for local SEO, listing management, and review tools used by top agencies worldwide.",
+        "We work with local service businesses, trades, startups, and brick-and-mortar shops that need to be found online and turn clicks into customers.",
       gradient: "from-orange-500 to-red-500",
     },
     {
-      icon: Target,
-      title: "UK Local Business Experts",
+      icon: Zap,
+      title: "Built for Real Businesses, Not Corporations",
       description:
-        "We specialize in helping UK businesses dominate local search, rank on Google Maps, and attract customers in their area.",
+        "No enterprise bloat. No 90-day roadmaps. We build what you need, launch it fast, and get you results without the corporate runaround.",
       gradient: "from-red-500 to-pink-500",
     },
     {
-      icon: Zap,
-      title: "Fast, Proven, Scalable",
+      icon: Shield,
+      title: "Results Without the Runaround",
       description:
-        "We build fast. We launch fast. And we deliver results that scale. No 6-month buildouts. No empty promises. Just smart marketing that works.",
+        "You get a website that works, SEO that ranks, and reviews that close deals. Clear timelines. No excuses. Just execution.",
       gradient: "from-pink-500 to-purple-500",
     },
     {
-      icon: Shield,
-      title: "Transparent & Accountable",
+      icon: Award,
+      title: "Clear. Simple. Action-Driven.",
       description:
-        "You'll always know what we're doing, why we're doing it, and what results you're getting. Full reporting. No surprises.",
+        "We don't sell you a dream. We show you the plan, do the work, and deliver the outcome. Full transparency. Zero fluff.",
       gradient: "from-purple-500 to-indigo-500",
     },
   ];
@@ -104,11 +104,10 @@ const Testimonials = () => {
         {/* Section header */}
         <div ref={titleRef} className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
-            Why Choose <span className="gradient-text">BuzzBold Marketing</span>
+            Built for <span className="gradient-text">Local Businesses That Want Results</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-400">
-            We&apos;re not just another agency. We&apos;re specialists in local business growth,
-            powered by the best tools in the industry.
+            We help service businesses, trades, and local shops get found, get chosen, and grow without the BS.
           </p>
         </div>
 
@@ -163,10 +162,10 @@ const Testimonials = () => {
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Let&apos;s Grow Your Business Together
+            Ready to Grow?
           </h3>
           <p className="text-gray-400 mb-8 text-lg max-w-2xl mx-auto">
-            Ready to dominate your local market? Book a free strategy call and discover how we can help you get more visibility, more leads, and more revenue.
+            Let&apos;s talk. No pressure. No pitch. Just a real conversation about what you need and how we can help.
           </p>
           <button
             onClick={() => {
@@ -177,7 +176,7 @@ const Testimonials = () => {
             }}
             className="px-10 py-5 rounded-full bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 text-white font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
-            Book a Strategy Call
+            Get In Touch
           </button>
         </div>
       </div>
