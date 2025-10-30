@@ -128,7 +128,7 @@ const Services = () => {
             Services Built to <span className="gradient-text">Drive Results</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-400">
-            Everything your business needs to show up online, stand out locally, and convert clicks into customers.
+            Everything your business needs to get chosen, dominate locally, generate customers.
             We handle the tech. You handle the growth.
           </p>
         </div>
