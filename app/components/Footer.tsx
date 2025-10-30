@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Logo from "./Logo";
 import { PopupModal } from "react-calendly";
+import ClientOnly from "./ClientOnly";
 
 const Footer = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -257,14 +258,14 @@ const Footer = () => {
         </button>
 
         {/* Calendly Popup Modal */}
-        {typeof window !== 'undefined' && (
+        <ClientOnly>
           <PopupModal
             url="https://calendly.com/buzzboldmarketing"
             onModalClose={() => setIsCalendlyOpen(false)}
             open={isCalendlyOpen}
             rootElement={document.body}
           />
-        )}
+        </ClientOnly>
       </div>
     </footer>
   );
