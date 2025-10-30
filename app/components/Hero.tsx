@@ -134,9 +134,9 @@ const Hero = () => {
             ref={titleRef}
             className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
           >
-            Get Chosen.{" "}
+            Get Found.{" "}
             <span className="gradient-text text-glow inline-block">
-              Get Found.
+              Get Chosen.
             </span>
             <br />
             Get BuzzBold.
