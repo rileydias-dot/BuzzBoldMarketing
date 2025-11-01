@@ -112,7 +112,7 @@ const Services = () => {
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -134,14 +134,14 @@ const Services = () => {
                   />
                 </div>
 
-                <CardHeader className="relative z-10 flex flex-col items-start p-8 space-y-4">
+                <CardHeader className="relative z-10 flex flex-col items-start p-6 space-y-3">
                   {/* Icon with gradient */}
                   <div
-                    className={`p-4 rounded-xl bg-gradient-to-br ${service.gradient} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                    className={`p-3 rounded-xl bg-gradient-to-br ${service.gradient} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
                   >
                     {service.icon}
                   </div>
-                  <CardTitle className="text-2xl font-bold text-white">
+                  <CardTitle className="text-xl font-bold text-white leading-tight">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
