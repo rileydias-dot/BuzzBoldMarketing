@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
   const sectionRef = useRef(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const popupCloseButtonRef = useRef<HTMLButtonElement>(null);
@@ -81,7 +82,9 @@ const Contact = () => {
       setShowSuccessPopup(true);
 
       // Reset form
-      e.currentTarget.reset();
+      if (formRef.current) {
+        formRef.current.reset();
+      }
     } catch (error: any) {
       console.error("Form submission error:", error);
       console.error("Error details:", {
@@ -114,7 +117,7 @@ const Contact = () => {
                 Every consultation includes a free SEO audit revealing exactly where you&apos;re losing customers online and how to win them back.
               </p>
 
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-gray-900 mb-2">
                     Your Name <span className="text-red-600">*</span>
