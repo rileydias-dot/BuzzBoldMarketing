@@ -43,7 +43,7 @@ export default function NewHeader() {
   const navItems = [
     { label: "Home", target: "#home" },
     { label: "Services", target: "#services" },
-    { label: "Gameplan", target: "#portfolio" },
+    { label: "Our Winning Strategy", target: "#portfolio" },
     { label: "Contact", target: "#contact" },
   ];
 

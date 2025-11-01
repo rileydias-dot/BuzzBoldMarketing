@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, CheckCircle, X } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
   const sectionRef = useRef(null);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   useEffect(() => {
     if (sectionRef.current) {
@@ -30,6 +31,16 @@ const Contact = () => {
     }
   }, []);
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Show success popup
+    setShowSuccessPopup(true);
+    // Auto-close after 5 seconds
+    setTimeout(() => {
+      setShowSuccessPopup(false);
+    }, 5000);
+  };
+
   return (
     <section ref={sectionRef} className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-20">
       <div className="container mx-auto px-4">
@@ -44,7 +55,7 @@ const Contact = () => {
                 Every consultation includes a free SEO audit revealing exactly where you&apos;re losing customers online and how to win them back.
               </p>
 
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm font-bold text-gray-900 mb-2">
                     Your Name <span className="text-red-600">*</span>
@@ -255,6 +266,51 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Success Popup */}
+      {showSuccessPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
+          <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-white/10 rounded-3xl p-8 md:p-12 max-w-md w-full shadow-2xl relative animate-in zoom-in duration-500">
+            {/* Close button */}
+            <button
+              onClick={() => setShowSuccessPopup(false)}
+              className="absolute top-4 right-4 p-2 rounded-full hover:bg-white/10 transition-colors"
+              aria-label="Close"
+            >
+              <X className="w-6 h-6 text-gray-400 hover:text-white" />
+            </button>
+
+            {/* Success icon with gradient */}
+            <div className="flex justify-center mb-6">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 blur-2xl opacity-50 animate-pulse" />
+                <div className="relative bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 rounded-full p-4">
+                  <CheckCircle className="w-16 h-16 text-white" />
+                </div>
+              </div>
+            </div>
+
+            {/* Success message */}
+            <div className="text-center space-y-4">
+              <h3 className="text-3xl font-black text-white">
+                Message <span className="gradient-text">Received!</span>
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Thank you for reaching out. Our team will review your inquiry and get back to you within <span className="font-bold text-white">24 hours</span>.
+              </p>
+              <div className="pt-4 border-t border-white/10">
+                <p className="text-gray-400 text-sm">
+                  Check your inbox for a confirmation email.
+                </p>
+              </div>
+            </div>
+
+            {/* Decorative gradient blurs */}
+            <div className="absolute -top-20 -left-20 blur-gradient-orange opacity-20" />
+            <div className="absolute -bottom-20 -right-20 blur-gradient-pink opacity-20" />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

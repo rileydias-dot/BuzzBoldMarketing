@@ -75,21 +75,21 @@
 
 @layer components {
     .section-padding {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     @media (min-width: 768px) {
         .section-padding {
-            padding-top: 7rem;
-            padding-bottom: 7rem;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
         }
     }
 
     @media (min-width: 1024px) {
         .section-padding {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
     }
 

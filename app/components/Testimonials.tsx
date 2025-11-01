@@ -102,7 +102,7 @@ const Testimonials = () => {
 
       <div className="container mx-auto container-padding relative z-10">
         {/* Section header */}
-        <div ref={titleRef} className="text-center mb-16 max-w-3xl mx-auto">
+        <div ref={titleRef} className="text-center mb-10 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
             Built for <span className="gradient-text">Local Businesses That Want Results</span>
           </h2>
@@ -160,7 +160,7 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Grow?
           </h3>
