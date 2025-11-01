@@ -33,10 +33,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Show success popup
+    // Show success popup - it will appear centered in the current viewport
     setShowSuccessPopup(true);
-    // Scroll to top of page to center popup in viewport
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
