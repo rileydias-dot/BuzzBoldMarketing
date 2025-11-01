@@ -300,14 +300,34 @@ The easiest way to deploy is using [Vercel](https://vercel.com):
 
 ## 🔧 Configuration
 
+### EmailJS Setup (Contact Form)
+
+The contact form uses EmailJS to send emails to `support@buzzboldmarketing.com`. To set it up:
+
+1. **Create an EmailJS account** at [emailjs.com](https://www.emailjs.com)
+2. **Create an Email Service**:
+   - Go to Email Services
+   - Add a new service (Gmail, Outlook, etc.)
+   - Name it `service_buzzbold`
+3. **Create an Email Template**:
+   - Go to Email Templates
+   - Create a new template named `template_contact`
+   - Use these template variables:
+     - `{{name}}`, `{{businessName}}`, `{{email}}`, `{{phone}}`
+     - `{{businessType}}`, `{{location}}`, `{{service}}`
+     - `{{website}}`, `{{advertising}}`, `{{goals}}`, `{{message}}`
+     - `{{to_email}}` (set to support@buzzboldmarketing.com)
+4. **API Keys** are already configured in the code:
+   - Public Key: `3PzRZdZuhqytSTXs6`
+   - Private Key: `aA6qx931eYvFyE61tkG28`
+
+The form will automatically send emails when submitted.
+
 ### Environment Variables
 
 Create a `.env.local` file (optional):
 
 ```env
-# Email service (for contact form - not yet implemented)
-NEXT_PUBLIC_EMAIL_SERVICE_ID=your_service_id
-
 # Analytics (optional)
 NEXT_PUBLIC_GA_ID=your_google_analytics_id
 
@@ -352,7 +372,9 @@ Phone: **020 1234 5678** (Mon-Fri: 9am-5pm)
 - [x] Contact form with success popup
 - [x] Professional service cards
 - [x] Fixed navigation with mobile menu
-- [ ] Form backend integration (EmailJS, Resend, etc.)
+- [x] Form backend integration with EmailJS
+- [x] Form validation and accessibility improvements
+- [x] Email delivery to support@buzzboldmarketing.com
 - [ ] Google Analytics integration
 - [ ] Blog section
 - [ ] Case studies page
