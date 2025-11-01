@@ -69,14 +69,29 @@ const Contact = () => {
     };
 
     try {
-      // Send email using EmailJS (already initialized in useEffect)
-      const response = await emailjs.send(
+      // Send notification email to business
+      const businessEmailResponse = await emailjs.send(
         "service_buzzbold", // Service ID
         "template_contact", // Template ID
         templateParams
       );
 
-      console.log("Email sent successfully:", response);
+      console.log("Business notification sent:", businessEmailResponse);
+
+      // Send auto-reply to customer
+      const autoReplyParams = {
+        to_email: templateParams.email,
+        to_name: templateParams.name,
+        business_name: templateParams.businessName,
+      };
+
+      const autoReplyResponse = await emailjs.send(
+        "service_buzzbold", // Service ID
+        "template_autoreply", // Auto-reply template ID
+        autoReplyParams
+      );
+
+      console.log("Auto-reply sent:", autoReplyResponse);
 
       // Show success popup
       setShowSuccessPopup(true);
