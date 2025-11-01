@@ -70,9 +70,9 @@ const Testimonials = () => {
     },
     {
       icon: Zap,
-      title: "Built for Real Businesses, Not Corporations",
+      title: "Build to Dominate",
       description:
-        "No enterprise bloat. No 90-day roadmaps. We build what you need, launch it fast, and get you results without the corporate runaround.",
+        "We build what you need, launch it fast, and get you results. Every campaign is designed to dominate your local market and drive measurable growth.",
       gradient: "from-red-500 to-pink-500",
     },
     {

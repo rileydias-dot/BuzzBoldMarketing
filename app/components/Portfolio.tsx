@@ -26,16 +26,9 @@ const processSteps = [
   {
     id: 3,
     icon: TrendingUp,
-    title: "Launch & Grow",
-    headline: "Review",
+    title: "Execute & Monitor",
+    headline: "Execute. Monitor. Grow With You.",
     gradient: "from-pink-500 to-purple-500",
-  },
-  {
-    id: 4,
-    icon: Headset,
-    title: "Ongoing Support",
-    headline: "Grow With You",
-    gradient: "from-purple-500 to-indigo-500",
   },
 ];
 

@@ -79,9 +79,14 @@ const Services = () => {
       gradient: "from-red-500 to-pink-500",
     },
     {
+      icon: <TrendingUp className="w-10 h-10" />,
+      title: "Social Media Posting & Management",
+      gradient: "from-pink-500 to-purple-500",
+    },
+    {
       icon: <MessageSquare className="w-10 h-10" />,
       title: "Account Management",
-      gradient: "from-pink-500 to-purple-500",
+      gradient: "from-purple-500 to-indigo-500",
     },
   ];
 

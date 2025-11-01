@@ -41,7 +41,7 @@ const Contact = () => {
                 Get Your <span className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">Free SEO Audit</span>
               </h2>
               <p className="text-gray-600 mb-8">
-                See exactly where your business stands online. We&apos;ll show you what&apos;s working, what&apos;s not, and how to dominate your local market.
+                Every consultation includes a free SEO audit revealing exactly where you&apos;re losing customers online and how to win them back.
               </p>
 
               <form className="space-y-6">
@@ -215,7 +215,7 @@ const Contact = () => {
                 <Phone className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Call Us Directly</h3>
                 <p className="text-xl font-semibold mb-2">020 1234 5678</p>
-                <p className="text-red-100">Mon-Fri: 9am-6pm GMT</p>
+                <p className="text-red-100">Mon-Fri: 9am-5pm</p>
                 <p className="text-red-100">Real people. No call centers.</p>
               </div>
 
@@ -232,15 +232,15 @@ const Contact = () => {
                 <Clock className="w-12 h-12 mb-4 text-red-600" />
                 <h3 className="text-2xl font-bold mb-2 text-gray-900">Office Hours</h3>
                 <p className="text-gray-600 font-semibold">Monday - Friday</p>
-                <p className="text-gray-600">9:00 AM - 6:00 PM</p>
+                <p className="text-gray-600">9:00 AM - 5:00 PM</p>
                 <p className="text-gray-600 mt-2">Weekend? Leave us a message.</p>
               </div>
 
               <div className="bg-gradient-to-br from-orange-600 to-red-600 rounded-3xl p-8 text-white shadow-2xl">
                 <MapPin className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Serving UK Businesses</h3>
-                <p className="text-orange-100 font-semibold">Local to National</p>
-                <p className="text-orange-100">Remote consultation available</p>
+                <p className="text-orange-100 font-semibold">Remote Consultation Only</p>
+                <p className="text-orange-100">Nationwide coverage across the UK</p>
               </div>
 
               <div className="bg-red-600 rounded-3xl p-8 text-white shadow-2xl">

@@ -134,12 +134,9 @@ const Hero = () => {
             ref={titleRef}
             className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
           >
-            Get Found.{" "}
             <span className="gradient-text text-glow inline-block">
-              Get Chosen.
+              Build to Dominate.
             </span>
-            <br />
-            Get BuzzBold.
           </h1>
 
           {/* Subtitle */}
@@ -147,31 +144,33 @@ const Hero = () => {
             ref={subtitleRef}
             className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            We help UK local businesses dominate their market with expert SEO, professional websites,
-            and reputation management that drives real leads fast.
+            Helping UK businesses grow visibility, leads, and revenue.
           </p>
 
           {/* CTAs */}
           <div
             ref={ctaRef}
-            className="flex flex-col gap-4 items-center w-full"
+            className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full"
           >
+            <a
+              href="tel:02012345678"
+              className="btn-primary px-12 py-6 text-xl font-black rounded-full transition-all duration-300 hover:scale-105 inline-flex items-center gap-3 shadow-2xl"
+            >
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call Now
+            </a>
             <Button
               size="lg"
               onClick={handleCtaClick}
-              className="btn-primary px-8 py-6 text-lg font-bold group relative overflow-hidden rounded-full"
+              className="border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white hover:text-black px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Get Your Free SEO Audit
+              <span className="flex items-center gap-2">
+                Get Free SEO Audit
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
-            <a
-              href="tel:02012345678"
-              className="border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white hover:text-black px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 inline-block"
-            >
-              Call Us
-            </a>
           </div>
 
           {/* Stats bar */}
