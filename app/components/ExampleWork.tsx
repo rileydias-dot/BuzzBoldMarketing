@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ExampleWork = () => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
-  const cardsRef = useRef<HTMLDivElement[]>([]);
+  const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
