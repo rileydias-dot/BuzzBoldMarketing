@@ -63,13 +63,10 @@ const Contact = () => {
     };
 
     try {
-      // Initialize EmailJS with public key
-      emailjs.init("3PzRZdZuhqytSTXs6");
-
       // Send email using EmailJS
       const response = await emailjs.send(
-        "service_buzzbold", // Service ID - you'll need to create this in EmailJS dashboard
-        "template_contact", // Template ID - you'll need to create this in EmailJS dashboard
+        "service_buzzbold", // Service ID
+        "template_contact", // Template ID
         templateParams,
         "3PzRZdZuhqytSTXs6" // Public API key
       );
