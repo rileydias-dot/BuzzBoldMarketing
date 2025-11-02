@@ -152,7 +152,7 @@ export default function BrightWaveElectrical() {
       problem: 'Customer building rear extension requiring complete electrical design and installation for kitchen, utility room, and bathroom.',
       solution: 'Created comprehensive electrical design with dedicated circuits for kitchen appliances, bathroom zones compliant with Part P, and LED lighting throughout. Coordinated with builders for first and second fix installations.',
       result: 'Full electrical installation completed on schedule. All work certified and Building Control approved. Energy-efficient LED lighting reduces running costs.',
-      image: 'photo-1504307651254-35680f356dfd'
+      image: 'photo-1667491295131-c6ccecd35f65'
     },
     {
       title: 'Smart Lighting Installation',
