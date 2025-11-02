@@ -87,7 +87,7 @@ export default function BrightWaveElectrical() {
       title: 'Consumer Unit Upgrades',
       icon: Shield,
       description: 'Full rewires, fuse box replacement, RCD protection upgrades',
-      image: 'photo-1621905251453-5cb9e63e0c4e',
+      image: 'photo-1635335874521-7987db781153',
       details: 'Upgrade outdated fuse boxes to modern consumer units with RCD protection. Complete rewiring services for older properties, ensuring safety and compliance with current regulations.',
       safety: 'NICEIC certified installations. All work includes EICR testing and certification. Meets latest BS7671 standards.'
     },
