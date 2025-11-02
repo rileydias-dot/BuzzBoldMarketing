@@ -166,7 +166,7 @@ export default function BrightWaveElectrical() {
       problem: 'Emergency callout for complete property power loss late evening. Family with young children in darkness with no heating.',
       solution: 'Rapid response within 45 minutes. Diagnosed faulty main switch in consumer unit. Replaced main switch and tested all circuits for safety.',
       result: 'Power restored same evening. Family safely back with electricity and heating. Follow-up inspection recommended consumer unit upgrade for long-term reliability.',
-      image: 'photo-1621905252472-70d2f3e6d53c'
+      image: 'photo-1603172159066-6ade2af706c4'
     }
   ];
 
