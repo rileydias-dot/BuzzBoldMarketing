@@ -138,7 +138,7 @@ export default function BrightWaveElectrical() {
       problem: 'Customer experiencing repeated circuit breaker trips in kitchen, especially when using multiple appliances. Safety concern with potential fire risk.',
       solution: 'Comprehensive circuit testing revealed faulty appliance circuit with damaged wiring behind kitchen units. Replaced damaged cables and upgraded consumer unit with dedicated RCD protection for kitchen circuits.',
       result: 'Kitchen circuits now operating safely with proper RCD protection. Customer can use all appliances simultaneously without issues. Full EICR certification provided.',
-      image: 'photo-1565183928294-7d22f2150ee2'
+      image: 'photo-1467733238130-bb6846885316'
     },
     {
       title: 'Old Fuse Box Upgrade',
