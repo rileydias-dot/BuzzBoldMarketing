@@ -504,7 +504,7 @@ const FlowPrimePlumbing = () => {
                   <div className="bg-[#F5F7FB] border-2 border-gray-200 rounded-lg p-8">
                     <div className="relative aspect-video rounded-lg overflow-hidden mb-6">
                       <Image
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80"
+                        src="https://images.unsplash.com/photo-1759757707824-4e5f54b7a43c?w=1200&q=80"
                         alt="Emergency plumber shutting off water valve to stop leak"
                         width={1200}
                         height={675}
