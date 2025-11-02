@@ -928,7 +928,7 @@ const FlowPrimePlumbing = () => {
                   <div className="bg-[#F5F7FB] border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative aspect-video">
                       <Image
-                        src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=1200&q=80"
+                        src="https://images.unsplash.com/photo-1650551182991-b07558247564?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873"
                         alt="Copper pipe fittings and professional plumbing tools on workbench"
                         width={1200}
                         height={675}
