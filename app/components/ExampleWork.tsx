@@ -63,45 +63,46 @@ const ExampleWork = () => {
 
   const examples = [
     {
-      title: "Plumber Website",
+      title: "FlowPrime Plumbing",
       icon: <Wrench className="w-8 h-8" />,
-      gradient: "from-blue-500 to-cyan-500",
-      description: "Emergency callouts, booking system, service area maps",
+      gradient: "from-blue-600 to-cyan-500",
+      description: "24/7 emergency repairs, leak detection, boiler installations",
       link: "/examples/plumber",
       mockup: {
-        headline: "24/7 Emergency Plumbing",
-        subheadline: "Fast, Reliable Service in Your Area",
-        cta: "Call Now",
-      },
-    },
-    {
-      title: "Landscaper Website",
-      icon: <Leaf className="w-8 h-8" />,
-      gradient: "from-green-500 to-emerald-500",
-      description: "Portfolio gallery, quote requests, seasonal services",
-      link: "/examples/landscaper",
-      mockup: {
-        headline: "Transform Your Outdoor Space",
-        subheadline: "Professional Landscaping & Garden Design",
+        headline: "Reliable Plumbing. Local Experts.",
+        subheadline: "Gas Safe Registered • Fully Insured",
         cta: "Get Free Quote",
       },
     },
     {
-      title: "Electrician Website",
+      title: "GreenFrame Landscapes",
+      icon: <Leaf className="w-8 h-8" />,
+      gradient: "from-green-700 to-green-400",
+      description: "Garden design, decking & fencing, patios & driveways",
+      link: "/examples/landscaper",
+      mockup: {
+        headline: "Transform Your Outdoor Space",
+        subheadline: "Professional Garden Design & Build",
+        cta: "Get Free Quote",
+      },
+    },
+    {
+      title: "BrightWave Electrical",
       icon: <Zap className="w-8 h-8" />,
-      gradient: "from-yellow-500 to-orange-500",
-      description: "Safety certifications, emergency repairs, installation quotes",
+      gradient: "from-amber-500 to-orange-600",
+      description: "Wiring upgrades, fuse box safety, smart home installations",
       link: "/examples/electrician",
       mockup: {
-        headline: "Licensed Electricians You Can Trust",
-        subheadline: "Residential & Commercial Electrical Services",
-        cta: "Book Service",
+        headline: "Safe, Certified Electrical Work",
+        subheadline: "NICEIC Approved • Part P Certified",
+        cta: "Get Free Quote",
       },
     },
   ];
 
   return (
     <section
+      id="examples"
       ref={sectionRef}
       className="section-padding bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden"
     >
