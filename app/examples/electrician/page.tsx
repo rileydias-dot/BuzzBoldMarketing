@@ -95,7 +95,7 @@ export default function BrightWaveElectrical() {
       title: 'Smart Home Installation',
       icon: Lightbulb,
       description: 'Home automation, LED lighting, smart thermostats and controls',
-      image: 'photo-1558002038-1055907df827',
+      image: 'photo-1736488517606-ff7b014c07a6',
       details: 'Transform your home with smart technology. Install Philips Hue lighting systems, smart thermostats, automated blinds, and integrated home control systems.',
       safety: 'Professional installation ensures compatibility and safety. Full system testing and user training provided.'
     },
