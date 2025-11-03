@@ -13,21 +13,21 @@ const steps = [
     icon: <Target className="h-6 w-6 text-orange-300" />,
     title: "Discover & prioritise",
     detail: "Workshops to align goals, messaging, and audience so we know exactly what to build and measure.",
-    timeline: "Days 1 - 5",
+    timeline: "Phase 1",
   },
   {
     icon: <Rocket className="h-6 w-6 text-orange-300" />,
     title: "Design, build & launch",
     detail:
       "High-fidelity design, purposeful copy, and a fast Next.js build. We go live once performance and QA checks pass.",
-    timeline: "Days 6 - 21",
+    timeline: "Phase 2",
   },
   {
     icon: <TrendingUp className="h-6 w-6 text-orange-300" />,
     title: "Optimise & grow",
     detail:
-      "Monitor metrics, test new ideas, and keep expanding what works. Monthly reviews keep everyone accountable.",
-    timeline: "Month 2 onwards",
+      "Monitor metrics, test new ideas, and keep expanding what works. Regular reviews keep everyone accountable.",
+    timeline: "Phase 3",
   },
 ];
 
@@ -87,13 +87,13 @@ const Portfolio = () => {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="surface-card flex h-full flex-col gap-4 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-orange-400/50"
+              className="surface-card group flex h-full flex-col gap-4 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-orange-400/60 hover:shadow-[0_20px_50px_rgba(249,115,22,0.25)]"
             >
               <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-gray-400">
-                <span>{step.timeline}</span>
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5">{step.icon}</div>
+                <span className="group-hover:text-orange-400 transition-colors">{step.timeline}</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500/20 to-orange-600/10 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">{step.icon}</div>
               </div>
-              <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+              <h3 className="text-lg font-semibold bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">{step.title}</h3>
               <p className="text-sm text-gray-300">{step.detail}</p>
             </Card>
           ))}
@@ -111,8 +111,8 @@ const Portfolio = () => {
             <p className="font-semibold text-white">What collaboration feels like:</p>
             <ul className="mt-4 space-y-3">
               {[
-                "Weekly async updates in your preferred channel",
-                "Monthly performance reviews with next actions",
+                "Regular async updates in your preferred channel",
+                "Performance reviews with next actions",
                 "Direct access to the strategist and lead designer",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">

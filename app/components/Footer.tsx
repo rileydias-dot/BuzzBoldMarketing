@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -14,15 +13,10 @@ import {
   MapPin,
   Phone,
   Sparkles,
-  ArrowRight,
-  Calendar,
 } from "lucide-react";
 import Logo from "./Logo";
 
-const CalendlyPopup = dynamic(() => import("./CalendlyPopup"), { ssr: false });
-
 const Footer = () => {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   const handleScroll = (target: string) => {
     const element = document.querySelector(target);
@@ -50,15 +44,8 @@ const Footer = () => {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <button onClick={() => handleScroll("#contact")} className="btn-primary inline-flex items-center gap-2 px-8 py-3 text-base">
-              <Calendar className="h-5 w-5" />
+              <Sparkles className="h-5 w-5" />
               Talk to the team
-            </button>
-            <button
-              onClick={() => setIsCalendlyOpen(true)}
-              className="inline-flex items-center gap-2 rounded-full border border-white/12 px-8 py-3 text-base font-semibold text-slate-100 transition-colors duration-200 hover:border-orange-400/60 hover:text-white"
-            >
-              <ArrowRight className="h-5 w-5" />
-              View availability
             </button>
           </div>
         </div>
@@ -229,13 +216,6 @@ const Footer = () => {
             />
           </svg>
         </button>
-
-        {/* Calendly Popup Modal */}
-        <CalendlyPopup
-          url="https://calendly.com/buzzboldmarketing"
-          open={isCalendlyOpen}
-          onClose={() => setIsCalendlyOpen(false)}
-        />
       </div>
     </footer>
   );

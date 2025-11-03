@@ -31,7 +31,7 @@ const points = [
     icon: <Award className="h-6 w-6 text-orange-300" />,
     title: "Straightforward collaboration",
     description:
-      "Weekly check-ins, async updates, and shared dashboards. No jargon, just transparent communication.",
+      "Regular check-ins, async updates, and shared dashboards. No jargon, just transparent communication.",
   },
 ];
 

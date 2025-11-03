@@ -61,6 +61,11 @@ const Hero = () => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#13213a,transparent_65%)] opacity-45" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:120px_120px] opacity-20" />
+        
+        {/* Animated floating orbs */}
+        <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-orange-500/20 blur-3xl animate-float" style={{animationDelay: '0s'}} />
+        <div className="absolute bottom-32 right-20 h-96 w-96 rounded-full bg-pink-500/15 blur-3xl animate-float" style={{animationDelay: '2s'}} />
+        <div className="absolute top-1/2 left-1/3 h-64 w-64 rounded-full bg-red-500/10 blur-3xl animate-float" style={{animationDelay: '4s'}} />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 text-center">
@@ -74,7 +79,9 @@ const Hero = () => {
             ref={titleRef}
             className="mb-6 text-5xl font-black leading-tight text-white md:text-6xl lg:text-7xl xl:text-8xl"
           >
-            <span className="text-glow inline-block text-white">Build to Dominate.</span>
+            <span className="inline-block text-white">
+              Build to Dominate.
+            </span>
           </h1>
 
           <p
@@ -88,10 +95,10 @@ const Hero = () => {
           <div ref={ctaRef} className="flex w-full flex-col items-center justify-center gap-5 text-base sm:flex-row">
             <button
               onClick={handleCtaClick}
-              className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-10 py-4 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-transform duration-200 hover:-translate-y-1 hover:bg-orange-400"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-10 py-4 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)] animate-pulse-glow"
             >
               Get a free website review
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
             <a
               href="tel:02012345678"
@@ -109,20 +116,21 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-white/12 bg-white/5 p-6">
+          <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-white/12 bg-gradient-to-br from-white/5 to-white/10 p-6 backdrop-blur-sm">
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
               {[
                 { value: "Local SEO", label: "Built in from day one" },
-                { value: "3 week builds", label: "Launch faster with polish" },
-                { value: "Transparent", label: "Weekly updates & reports" },
+                { value: "Quality builds", label: "Polished & professional" },
+                { value: "Transparent", label: "Regular updates & reports" },
                 { value: "UK specialists", label: "Industry-focused team" },
-              ].map((stat) => (
+              ].map((stat, index) => (
                 <div
                   key={stat.value}
-                  className="rounded-xl border border-white/10 bg-[#0b1321] px-4 py-6 text-center transition-colors duration-200 hover:border-orange-500/60"
+                  className="group rounded-xl border border-white/10 bg-gradient-to-br from-[#0b1321] to-[#0f1729] px-4 py-6 text-center transition-all duration-300 hover:border-orange-500/60 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.3)]"
+                  style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <div className="text-lg font-semibold text-white md:text-xl">{stat.value}</div>
-                  <div className="mt-2 text-xs text-gray-400 md:text-sm">{stat.label}</div>
+                  <div className="text-lg font-semibold bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent md:text-xl">{stat.value}</div>
+                  <div className="mt-2 text-xs text-gray-400 md:text-sm group-hover:text-gray-300 transition-colors">{stat.label}</div>
                 </div>
               ))}
             </div>

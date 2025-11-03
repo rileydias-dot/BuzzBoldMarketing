@@ -65,7 +65,7 @@ const ExampleWork = () => {
       },
       accentGradient: "from-sky-500/60 via-cyan-400/25 to-transparent",
       metrics: [
-        { label: "Launch timeframe", value: "3 weeks" },
+        { label: "Est. potential lead", value: "350+ monthly" },
         { label: "Lead uplift", value: "+212%" },
         { label: "Primary goal", value: "Emergency calls" },
       ],
@@ -81,9 +81,9 @@ const ExampleWork = () => {
       },
       accentGradient: "from-emerald-500/55 via-lime-400/25 to-transparent",
       metrics: [
-        { label: "Launch timeframe", value: "4 weeks" },
+        { label: "Est. potential lead", value: "180+ monthly" },
         { label: "Project enquiries", value: "×2.3" },
-        { label: "Avg. order value", value: "+38%" },
+        { label: "Primary goal", value: "High-value projects" },
       ],
     },
     {
@@ -97,9 +97,9 @@ const ExampleWork = () => {
       },
       accentGradient: "from-amber-400/55 via-orange-400/25 to-transparent",
       metrics: [
-        { label: "Launch timeframe", value: "2.5 weeks" },
+        { label: "Est. potential lead", value: "280+ monthly" },
         { label: "Booked jobs", value: "×3.1" },
-        { label: "Local rank", value: "Top 3" },
+        { label: "Primary goal", value: "Rewires & upgrades" },
       ],
     },
   ];
@@ -134,7 +134,7 @@ const ExampleWork = () => {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/12 bg-[#0b1321] shadow-[0_25px_60px_rgba(2,6,23,0.55)] transition-transform duration-200 hover:-translate-y-1 hover:border-orange-400/60"
+              className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/12 bg-gradient-to-br from-[#0b1321] to-[#0f1729] shadow-[0_25px_60px_rgba(2,6,23,0.55)] transition-all duration-300 hover:-translate-y-2 hover:border-orange-400/80 hover:shadow-[0_30px_70px_rgba(249,115,22,0.3)]"
             >
               <div
                 className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${example.accentGradient} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
@@ -176,9 +176,9 @@ const ExampleWork = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between border-t border-white/10 px-6 py-4 text-sm text-slate-200">
-                <span className="font-semibold">View project</span>
-                <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+              <div className="flex items-center justify-between border-t border-white/10 bg-gradient-to-r from-transparent via-orange-500/5 to-transparent px-6 py-4 text-sm text-slate-200 group-hover:via-orange-500/10 transition-all duration-300">
+                <span className="font-semibold group-hover:text-orange-400 transition-colors">View project</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-orange-400" />
               </div>
             </a>
           ))}
@@ -197,10 +197,10 @@ const ExampleWork = () => {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-3 font-semibold text-black transition-transform duration-200 hover:-translate-y-1 hover:bg-orange-400"
+            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)]"
           >
             Schedule a walkthrough
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
       </div>

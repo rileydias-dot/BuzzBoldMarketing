@@ -69,7 +69,7 @@ const Services = () => {
       title: "Always-on optimisation",
       copy: [
         "Landing page and funnel experiments",
-        "Monthly performance reviews with action steps",
+        "Regular performance reviews with action steps",
         "Dashboards that highlight the numbers that matter",
       ],
     },
@@ -105,10 +105,10 @@ const Services = () => {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="surface-card flex h-full flex-col gap-4 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-orange-400/50"
+              className="surface-card flex h-full flex-col gap-4 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-orange-400/60 hover:shadow-[0_20px_50px_rgba(249,115,22,0.25)] group"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">{service.icon}</div>
-              <h3 className="mt-5 text-xl font-semibold text-white">{service.title}</h3>
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/10 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">{service.icon}</div>
+              <h3 className="mt-5 text-xl font-semibold bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">{service.title}</h3>
               <ul className="mt-5 space-y-3 text-sm text-gray-300">
                 {service.copy.map((item) => (
                   <li key={item} className="flex items-start gap-2">
@@ -130,10 +130,10 @@ const Services = () => {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-3 font-semibold text-black transition-transform duration-200 hover:-translate-y-1 hover:bg-orange-400"
+            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)]"
           >
             Book a strategy call
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
       </div>
