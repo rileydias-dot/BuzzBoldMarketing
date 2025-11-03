@@ -98,7 +98,7 @@ const Footer = () => {
                 { label: "Home", target: "#home" },
                 { label: "Services", target: "#services" },
                 { label: "Example Work", target: "#examples" },
-                { label: "Our Process", target: "#portfolio" },
+                { label: "Our Winning Strategy", target: "#portfolio" },
                 { label: "Contact", target: "#contact" },
               ].map((link) => (
                 <li key={link.label}>
