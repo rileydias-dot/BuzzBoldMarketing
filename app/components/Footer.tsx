@@ -56,13 +56,13 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <button
               onClick={() => handleScroll("#home")}
-              className="mb-6 flex items-center gap-2 text-left text-slate-100 transition-transform duration-200 hover:-translate-y-0.5"
+              className="mb-6 text-left transition-transform duration-200 hover:-translate-y-0.5"
             >
-              <Logo size={28} className="shrink-0" />
-              <div className="flex flex-col leading-tight">
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-orange-400">BuzzBold</span>
-                <span className="text-base font-semibold text-white">Marketing</span>
-              </div>
+              <span className="text-2xl font-bold flex items-center gap-1">
+                <Logo size={32} className="inline-block" />
+                <span className="gradient-text">Buzz</span>
+                <span className="text-white">BoldMarketing</span>
+              </span>
             </button>
             <p className="mb-6 max-w-md text-sm leading-relaxed text-gray-300">
               We help UK local businesses grow with professional websites, local SEO, review management,
