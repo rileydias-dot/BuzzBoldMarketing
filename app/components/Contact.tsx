@@ -123,8 +123,27 @@ const Contact = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-[#05070f] py-20 text-slate-200" id="contact">
-      <div className="container mx-auto px-4">
+    <section ref={sectionRef} className="relative overflow-hidden bg-gradient-to-br from-[#020408] via-[#05070f] to-[#0a0d1a] py-20 text-slate-200" id="contact">
+      {/* Decorative background elements - Multiple gradient orbs from all sides */}
+      {/* Top gradients */}
+      <div className="absolute -top-48 left-10 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-orange-500/15 via-red-500/8 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="absolute -top-32 right-10 h-[400px] w-[400px] rounded-full bg-gradient-to-br from-purple-500/12 via-pink-500/6 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '10s' }} />
+      
+      {/* Side gradients */}
+      <div className="absolute top-1/4 -left-32 h-[450px] w-[450px] rounded-full bg-gradient-to-r from-blue-500/15 via-cyan-500/8 to-transparent blur-3xl" />
+      <div className="absolute top-1/3 -right-32 h-[500px] w-[500px] rounded-full bg-gradient-to-l from-orange-500/15 via-amber-500/8 to-transparent blur-3xl" />
+      
+      {/* Bottom gradients */}
+      <div className="absolute -bottom-48 left-1/4 h-[550px] w-[550px] rounded-full bg-gradient-to-tr from-indigo-500/15 via-blue-500/8 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '12s' }} />
+      <div className="absolute -bottom-32 right-1/4 h-[450px] w-[450px] rounded-full bg-gradient-to-tl from-red-500/15 via-orange-500/8 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '9s' }} />
+      
+      {/* Center gradient for depth */}
+      <div className="absolute top-1/2 left-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-orange-500/8 via-purple-500/4 to-blue-500/8 blur-3xl" />
+      
+      {/* Subtle overlay pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.03),transparent_50%)]" />
+      
+      <div className="container relative mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Side - Form */}
@@ -358,13 +377,6 @@ const Contact = () => {
 
             {/* Right Side - Info Cards */}
             <div className="space-y-6">
-              <div className="surface-card rounded-3xl border border-white/12 p-8 text-slate-200">
-                <Phone className="w-12 h-12 mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Call Us Directly</h3>
-                <a href="tel:02012345678" className="text-xl font-semibold mb-2 hover:underline">020 1234 5678</a>
-                <p className="text-red-100">Mon-Fri: 9am-5pm</p>
-              </div>
-
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
                 <Mail className="w-12 h-12 mb-4 text-red-600" />
                 <h3 className="text-2xl font-bold mb-2 text-gray-900">Email Us Anytime</h3>

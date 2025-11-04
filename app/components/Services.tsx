@@ -52,7 +52,6 @@ const Services = () => {
       copy: [
         "Conversion-first site architecture and copywriting",
         "Responsive Next.js build optimised for speed",
-        "Launch-ready asset library and CMS handover",
       ],
     },
     {
@@ -62,6 +61,7 @@ const Services = () => {
         "Technical audit and on-page optimisation",
         "Google Business Profile clean-up and growth plan",
         "Review engine and citation management",
+        "Dashboards that highlight the numbers that matter",
       ],
     },
     {
@@ -70,7 +70,6 @@ const Services = () => {
       copy: [
         "Landing page and funnel experiments",
         "Regular performance reviews with action steps",
-        "Dashboards that highlight the numbers that matter",
       ],
     },
     {
@@ -121,21 +120,7 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="mb-5 text-sm text-gray-400 md:text-base">Not sure what mix you need? Let&apos;s map it out.</p>
-          <button
-            onClick={() => {
-              const element = document.querySelector("#contact");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)]"
-          >
-            Book a strategy call
-            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
-        </div>
+
       </div>
     </section>
   );

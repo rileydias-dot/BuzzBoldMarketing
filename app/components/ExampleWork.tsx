@@ -119,8 +119,7 @@ const ExampleWork = () => {
             Example websites that keep leads coming in.
           </h2>
           <p className="mt-4 text-base text-gray-400 md:text-lg">
-            A snapshot of recent launches. Each site is built around clear messaging, fast performance, and effortless
-            reader flows.
+            Each site is built around clear messaging, fast performance, and effortless reader flows.
           </p>
         </div>
 

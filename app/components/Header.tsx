@@ -88,13 +88,6 @@ const Header = () => {
             >
               Get In Touch
             </Button>
-            <a
-              href="tel:02012345678"
-              className="flex items-center gap-2 rounded-full border border-white/20 bg-gray-800/50 px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:border-orange-400/60 hover:bg-gray-800/70"
-            >
-              <Phone className="h-4 w-4" />
-              Call us
-            </a>
           </div>
 
           <button
