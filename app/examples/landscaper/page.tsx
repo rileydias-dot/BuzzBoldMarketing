@@ -63,7 +63,7 @@ export default function GreenFrameLandscapes() {
   ];
 
   const portfolioItems = [
-    { id: 1, image: 'photo-1558618666-fcd25c85cd64', alt: 'Modern garden patio transformation with outdoor dining area', category: 'patios', caption: 'Contemporary Patio Build', outcome: 'Transformed overgrown garden into modern entertaining space with porcelain paving and integrated lighting' },
+    { id: 1, image: '/images/homme-incognito-coupant-des-buissons-envahis.jpg', alt: 'Modern garden patio transformation with outdoor dining area', category: 'patios', caption: 'Contemporary Patio Build', outcome: 'Transformed overgrown garden into modern entertaining space with porcelain paving and integrated lighting' },
     { id: 2, image: 'photo-1600585152915-d208bec867a1', alt: 'Multi-level timber decking with glass balustrade', category: 'decking', caption: 'Multi-Level Decking Project', outcome: 'Created functional zones with composite decking and frameless glass panels for uninterrupted views' },
     { id: 3, image: 'photo-1585320806297-9794b3e4eeae', alt: 'Complete garden redesign with mixed planting borders', category: 'complete', caption: 'Full Garden Transformation', outcome: 'Complete redesign including patio, planting scheme, and lawn installation for family-friendly space' },
     { id: 4, image: 'photo-1416879595882-3373a0480b5b', alt: 'Natural stone patio with built-in seating area', category: 'patios', caption: 'Sandstone Patio & Walls', outcome: 'Installed Indian sandstone patio with matching retaining walls and raised planting beds' },
@@ -244,7 +244,7 @@ export default function GreenFrameLandscapes() {
           {/* Right Image */}
           <div className="relative h-[400px] lg:h-auto">
             <Image
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80"
+              src="/images/homme-incognito-coupant-des-buissons-envahis.jpg"
               alt="Modern garden patio with contemporary seating and lush planting"
               width={1800}
               height={1200}
@@ -949,7 +949,7 @@ export default function GreenFrameLandscapes() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "GreenFrame Landscapes",
-              "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+              "image": "/images/homme-incognito-coupant-des-buissons-envahis.jpg",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Unit 12, Green Business Park, Guildford Road",

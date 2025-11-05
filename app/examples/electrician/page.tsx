@@ -39,7 +39,7 @@ export default function BrightWaveElectrical() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "BrightWave Electrical",
-    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1800&q=80",
+    "image": "/images/electricien-en-uniforme-travaillant-dans-un-central-electrique.jpg",
     "description": "Certified electricians for repairs, rewires, and smart installs. Call our 24h line.",
     "telephone": "020 1234 5678",
     "address": {
@@ -287,26 +287,33 @@ export default function BrightWaveElectrical() {
             </div>
             
             {/* Right Image */}
-            <div className="relative h-[400px] lg:h-[600px]">
+            <div className="relative h-[400px] lg:h-[600px] overflow-hidden rounded-2xl lg:rounded-3xl border-4 border-white lg:border-8 shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1800&q=80"
+              src="/images/electricien-en-uniforme-travaillant-dans-un-central-electrique.jpg"
               alt="Professional electrician team"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority={true}
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-700"
             />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A5F]/80 via-[#1E3A5F]/40 to-transparent lg:from-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#1E3A5F]/85 via-[#1E3A5F]/40 to-transparent"></div>
               
               {/* Floating review card */}
-              <div className="absolute bottom-8 left-8 right-8 lg:left-auto lg:right-8 lg:max-w-xs bg-white rounded-2xl p-6 shadow-2xl">
-                <div className="flex items-center gap-1 mb-3">
+              <div className="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-auto lg:right-10 lg:max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-7 shadow-2xl border border-white/20 hover:scale-105 hover:shadow-3xl transition-all duration-300">
+                <div className="flex items-center gap-1.5 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-[#F59E0B] text-lg">★</span>
+                    <span key={i} className="text-[#F59E0B] text-xl">★</span>
                   ))}
+                  <span className="text-sm font-bold text-[#1E3A5F] ml-2">5.0</span>
                 </div>
-                <p className="text-[#1E3A5F] font-semibold mb-2">"Excellent service, arrived on time!"</p>
-                <p className="text-sm text-gray-600">— James R., Camden</p>
+                <p className="text-[#1E3A5F] font-bold text-lg mb-3 leading-snug">"Excellent service, arrived on time and fixed everything perfectly!"</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#D97706] flex items-center justify-center text-white font-bold">JR</div>
+                  <div>
+                    <p className="text-sm font-semibold text-[#1E3A5F]">James Richardson</p>
+                    <p className="text-xs text-gray-500">Camden • Verified Customer</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
