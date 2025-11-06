@@ -8,21 +8,21 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <Header />
-      <div id="home">
+      <div id="home" className="section-transition">
         <Hero />
       </div>
-      <div id="examples">
+      <div id="examples" className="section-transition">
         <ExampleWork />
       </div>
-      <div id="services">
+      <div id="services" className="section-transition">
         <Services />
       </div>
-      <div id="portfolio">
+      <div id="portfolio" className="section-transition">
         <Portfolio />
       </div>
-      <div id="contact">
+      <div id="contact" className="section-transition">
         <Contact />
       </div>
       <Footer />

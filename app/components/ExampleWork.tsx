@@ -108,11 +108,13 @@ const ExampleWork = () => {
     <section
       id="examples"
       ref={sectionRef}
-      className="relative overflow-hidden border-t border-white/5 bg-[#050810] py-20"
+      className="relative overflow-hidden border-t border-white/5 bg-gradient-to-b from-[#050810] via-[#05070f] to-[#05070f] section-padding"
     >
+      {/* Background effects */}
       <div className="absolute -top-40 right-10 h-72 w-72 rotate-12 rounded-full bg-gradient-to-br from-orange-500/20 via-transparent to-transparent blur-3xl" />
       <div className="absolute -bottom-48 left-10 h-80 w-80 rounded-full bg-gradient-to-br from-sky-500/25 via-transparent to-transparent blur-3xl" />
-      <div className="container relative mx-auto container-padding">
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:120px_120px] opacity-15" />
+      <div className="container relative mx-auto container-padding z-10">
         <div ref={titleRef} className="mx-auto mb-14 max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">Selected work</p>
           <h2 className="mt-4 text-4xl font-black text-white md:text-5xl">

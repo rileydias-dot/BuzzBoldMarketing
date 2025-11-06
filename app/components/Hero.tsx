@@ -56,7 +56,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#05070f] pt-40 pb-20 md:pt-36"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-[#05070f] via-[#05070f] to-[#050810] pt-40 pb-20 md:pt-36"
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#13213a,transparent_65%)] opacity-45" />
@@ -100,20 +100,6 @@ const Hero = () => {
               Get a free website review
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            <a
-              href="tel:02012345678"
-              className="inline-flex items-center gap-3 rounded-full border border-white/20 px-10 py-4 font-semibold text-gray-100 transition-all duration-200 hover:-translate-y-1 hover:bg-white/5"
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              Call 020 1234 5678
-            </a>
           </div>
 
           <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-white/12 bg-gradient-to-br from-white/5 to-white/10 p-6 backdrop-blur-sm">

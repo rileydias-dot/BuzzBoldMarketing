@@ -123,7 +123,7 @@ const Contact = () => {
   };
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-gradient-to-br from-[#020408] via-[#05070f] to-[#0a0d1a] py-20 text-slate-200" id="contact">
+    <section ref={sectionRef} className="relative overflow-hidden bg-gradient-to-b from-[#020408] via-[#05070f] to-[#05070f] section-padding text-slate-200" id="contact">
       {/* Decorative background elements - Multiple gradient orbs from all sides */}
       {/* Top gradients */}
       <div className="absolute -top-48 left-10 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-orange-500/15 via-red-500/8 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
@@ -140,8 +140,21 @@ const Contact = () => {
       {/* Center gradient for depth */}
       <div className="absolute top-1/2 left-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-orange-500/8 via-purple-500/4 to-blue-500/8 blur-3xl" />
       
-      {/* Subtle overlay pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.03),transparent_50%)]" />
+      {/* Multi-layer gradient overlays for depth and visual interest */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(249,115,22,0.08),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(139,92,246,0.06),transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(236,72,153,0.04),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(251,191,36,0.04),transparent_60%)]" />
+      
+      {/* Animated gradient mesh overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(249,115,22,0.03)_0%,transparent_25%,rgba(139,92,246,0.03)_50%,transparent_75%,rgba(59,130,246,0.03)_100%)] opacity-60" />
+      
+      {/* Subtle grid pattern overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
+      
+      {/* Shimmer effect overlay */}
+      <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,rgba(255,255,255,0.02)_60deg,transparent_120deg,rgba(249,115,22,0.02)_180deg,transparent_240deg,rgba(139,92,246,0.02)_300deg,transparent_360deg)] opacity-40" />
       
       <div className="container relative mx-auto px-4">
         <div className="max-w-6xl mx-auto">

@@ -84,8 +84,11 @@ const Services = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="section-padding border-t border-white/5 bg-[#05070f]">
-      <div className="container mx-auto container-padding">
+    <section ref={sectionRef} className="section-padding border-t border-white/5 bg-gradient-to-b from-[#05070f] via-[#05070f] to-[#070b18] relative overflow-hidden">
+      {/* Subtle background effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(249,115,22,0.04),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:120px_120px] opacity-15" />
+      <div className="container mx-auto container-padding relative z-10">
         <div ref={titleRef} className="mx-auto mb-14 max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">Services</p>
           <h2 className="mt-4 text-4xl font-black text-white md:text-5xl">

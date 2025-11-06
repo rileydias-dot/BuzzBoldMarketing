@@ -26,7 +26,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-[#05070f] pt-20 pb-8 text-slate-200">
+    <footer className="relative overflow-hidden bg-gradient-to-b from-[#05070f] to-[#020408] pt-20 pb-8 text-slate-200 border-t border-white/5">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:100px_100px]" />
       <div className="blur-gradient-orange top-0 -left-12" />
       <div className="blur-gradient-pink bottom-0 -right-12" />
