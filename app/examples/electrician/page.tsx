@@ -18,7 +18,10 @@ import {
   ChevronDown,
   Mail,
   Facebook,
-  Twitter
+  Twitter,
+  Menu,
+  X,
+  Star
 } from 'lucide-react';
 
 export default function BrightWaveElectrical() {
@@ -33,6 +36,7 @@ export default function BrightWaveElectrical() {
     isEmergency: false,
     message: ''
   });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // JSON-LD Structured Data
   const structuredData = {
@@ -232,7 +236,7 @@ export default function BrightWaveElectrical() {
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
         
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
             {/* Left Content */}
             <div className="flex items-center px-6 sm:px-12 lg:px-16 py-20 lg:py-32 relative z-10">
               <div className="max-w-xl">
@@ -288,14 +292,14 @@ export default function BrightWaveElectrical() {
             
             {/* Right Image */}
             <div className="relative h-[400px] lg:h-[600px] overflow-hidden rounded-2xl lg:rounded-3xl border-4 border-white lg:border-8 shadow-xl">
-            <Image
-              src="/images/electricien-en-uniforme-travaillant-dans-un-central-electrique.jpg"
-              alt="Professional electrician team"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority={true}
-              className="object-cover hover:scale-105 transition-transform duration-700"
-            />
+              <Image
+                src="/images/electricien-en-uniforme-travaillant-dans-un-central-electrique.jpg"
+                alt="Professional electrician team"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority={true}
+                className="object-cover hover:scale-105 transition-transform duration-700"
+              />
               <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#1E3A5F]/85 via-[#1E3A5F]/40 to-transparent"></div>
               
               {/* Floating review card */}
@@ -327,7 +331,7 @@ export default function BrightWaveElectrical() {
             <p className="text-sm font-semibold text-[#F59E0B] uppercase tracking-wide mb-2">Fully Certified & Trusted</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3A5F]">Industry Accreditations</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {certifications.map((cert, index) => {
               const IconComponent = cert.icon;
               return (
@@ -353,7 +357,7 @@ export default function BrightWaveElectrical() {
               Professional electrical solutions for homes and businesses across London
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.slice(0, 6).map((service, index) => {
               const IconComponent = service.icon;
               return (
@@ -405,7 +409,7 @@ export default function BrightWaveElectrical() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {[
               { icon: Shield, title: "Licensed & Insured", desc: "Fully qualified electricians with comprehensive insurance coverage" },
               { icon: Award, title: "Upfront Pricing", desc: "Fixed quotes with no hidden fees or surprise charges" },
@@ -475,7 +479,7 @@ export default function BrightWaveElectrical() {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               { quote: "Arrived on time, explained everything clearly, and fixed my wiring issue without any hassle. Professional service from start to finish!", name: "Sarah Mitchell", location: "Camden, London", rating: 5 },
               { quote: "Very friendly team, quick to respond, and the price matched the quote exactly. Super happy with their service and would highly recommend!", name: "James Robertson", location: "Islington, London", rating: 5 },
@@ -515,7 +519,7 @@ export default function BrightWaveElectrical() {
               Professional electrical services across all London boroughs
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
             {serviceAreas.map((area, index) => (
               <div key={index} className="group bg-gradient-to-br from-gray-50 to-white p-4 rounded-xl border border-gray-200 flex items-center gap-3 hover:border-[#F59E0B] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                 <MapPin className="w-4 h-4 text-[#F59E0B] flex-shrink-0 group-hover:scale-125 transition-transform" />
@@ -671,9 +675,9 @@ export default function BrightWaveElectrical() {
             const IconComponent = service.icon;
             const isEven = index % 2 === 0;
             return (
-              <div key={index} className={`grid md:grid-cols-2 gap-12 items-center ${!isEven ? 'md:flex-row-reverse' : ''}`}>
+              <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className={isEven ? 'md:order-1' : 'md:order-2'}>
-                  <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-2xl group">
+                  <div className="relative h-[300px] sm:h-[360px] lg:h-[450px] rounded-2xl overflow-hidden shadow-2xl group">
                     <Image
                       src={`https://images.unsplash.com/${service.image}?w=1200&q=80`}
                       alt={`${service.title} - Professional electrical service`}
@@ -741,7 +745,7 @@ export default function BrightWaveElectrical() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1E3A5F]">Our Qualified Team</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { title: "NICEIC Approved Contractors", desc: "All our electricians are NICEIC registered and regularly assessed to ensure the highest standards of workmanship and safety." },
               { title: "Part P Certified", desc: "Fully qualified to carry out all domestic electrical installations in compliance with Building Regulations Part P." },
@@ -782,7 +786,7 @@ export default function BrightWaveElectrical() {
         {/* Why Choose */}
         <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-xl border-2 border-gray-100">
           <h2 className="text-3xl sm:text-4xl font-black text-[#1E3A5F] mb-10 text-center">Why Choose BrightWave?</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               { icon: Clock, title: "Rapid Response", desc: "24/7 emergency service with 60-90 minute response times across London" },
               { icon: Award, title: "Transparent Service", desc: "Clear communication and detailed quotations before any work begins" },
@@ -849,7 +853,7 @@ export default function BrightWaveElectrical() {
                   className="pointer-events-none absolute inset-0 bg-gradient-to-br from-slate-100 via-transparent to-amber-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                   aria-hidden="true"
                 />
-                <div className="relative grid md:grid-cols-[1.15fr_1fr]">
+                <div className="relative grid grid-cols-1 md:grid-cols-[1.15fr_1fr]">
                   {/* Media */}
                   <div className="relative h-[260px] sm:h-[320px] md:h-full overflow-hidden">
                     <Image
@@ -890,7 +894,7 @@ export default function BrightWaveElectrical() {
                       </div>
                     </div>
 
-                    <div className="mt-5 grid gap-3 md:grid-cols-2">
+                    <div className="mt-5 grid grid-cols-1 gap-3 md:grid-cols-2">
                       {stageDetails.map((stage) => {
                         const StageIcon = stage.icon;
                         return (
@@ -985,7 +989,7 @@ export default function BrightWaveElectrical() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-gray-100">
             <div className="flex items-center gap-4 mb-8">
@@ -1228,104 +1232,151 @@ export default function BrightWaveElectrical() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        {/* Top Bar with Reviews */}
-        <div className="bg-[#1E3A5F] text-white py-3 sticky top-0 z-50 border-b border-[#2A4A6F]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#F59E0B]" />
-                <span className="font-medium">Fixed Pricing, No Hidden Fees</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-2">
-                <div className="flex items-center gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-[#F59E0B] text-base">★</span>
-                  ))}
-                </div>
-                <span className="font-semibold">4.8/5</span>
-                <span className="text-white/70">• 388+ Reviews</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Emergency Banner */}
-        <div className="bg-gradient-to-r from-[#DC2626] to-[#B91C1C] text-white py-3 text-center font-semibold shadow-lg sticky top-[48px] z-50">
-          <div className="flex items-center justify-center gap-2 animate-pulse">
-            <AlertTriangle className="w-5 h-5" />
-            <span className="text-sm sm:text-base">24/7 Emergency Response • Call <a href="tel:02012345678" className="underline font-bold hover:text-yellow-200">020 1234 5678</a></span>
-          </div>
-        </div>
-
         {/* Header */}
-        <header className="bg-[#1E3A5F] border-b border-[#2A4A6F] sticky top-[96px] z-40 backdrop-blur-md bg-[#1E3A5F]/98 shadow-lg">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
-              <div className="flex items-center gap-4 cursor-pointer group" onClick={() => setActivePage('home')}>
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F59E0B] to-[#E08A00] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <Zap className="w-7 h-7 text-white" />
+        <header className="lg:sticky lg:top-0 lg:z-50">
+          <div className="bg-[#1E3A5F] text-white py-3 border-b border-[#2A4A6F]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-[#F59E0B]" />
+                  <span className="font-medium">Fixed Pricing, No Hidden Fees</span>
                 </div>
-                <div>
-                  <span className="text-2xl font-black text-white tracking-tight block leading-none">
-                    BrightWave
-                  </span>
-                  <span className="text-xs text-white/60 font-medium">Electrical Services</span>
+                <div className="hidden sm:flex items-center gap-2">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B]"
+                        strokeWidth={1.5}
+                        fill="currentColor"
+                      />
+                    ))}
+                  </div>
+                  <span className="font-semibold">4.8/5</span>
+                  <span className="text-white/70">&bull; 388+ Reviews</span>
                 </div>
               </div>
-
-              <nav className="hidden lg:flex items-center gap-2">
-                {navigation.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => setActivePage(item.id)}
-                    className={`px-5 py-2.5 text-sm font-semibold rounded-lg transition-all ${
-                      activePage === item.id
-                        ? 'bg-[#F59E0B] text-white shadow-lg shadow-orange-500/30'
-                        : 'text-gray-300 hover:text-white hover:bg-white/10'
-                    }`}
-                  >
-                    {item.name}
-                  </button>
-                ))}
-              </nav>
-
-              <div className="hidden lg:flex items-center gap-4">
-                <button
-                  onClick={() => setActivePage('contact')}
-                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all cursor-pointer hover:scale-105"
-                >
-                  <span className="text-sm font-bold text-white">Get Free Quote</span>
-                </button>
-                <a
-                  href="tel:02012345678"
-                  className="flex items-center gap-2 bg-[#F59E0B] hover:bg-[#E08A00] text-white font-bold px-6 py-3 rounded-xl transition-all text-sm shadow-xl hover:scale-105"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>020 1234 5678</span>
-                </a>
-              </div>
-
-              <button className="lg:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors">
-                <ChevronDown className="w-6 h-6" />
-              </button>
             </div>
+          </div>
 
-            {/* Mobile Navigation */}
-            <div className="lg:hidden pb-4">
-              <div className="flex flex-wrap gap-2">
-                {navigation.map((item) => (
+          <div className="bg-gradient-to-r from-[#DC2626] to-[#B91C1C] text-white py-3 text-center font-semibold shadow-lg">
+            <div className="flex items-center justify-center gap-2 animate-pulse">
+              <AlertTriangle className="w-5 h-5" />
+              <span className="text-sm sm:text-base">
+                24/7 Emergency Response <span className="mx-1 text-white/70">&bull;</span> Call{' '}
+                <a href="tel:02012345678" className="underline font-bold hover:text-yellow-200">
+                  020 1234 5678
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div className="bg-[#1E3A5F] border-b border-[#2A4A6F] backdrop-blur-md bg-[#1E3A5F]/98 shadow-lg">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-20">
+                <div className="flex items-center gap-4 cursor-pointer group" onClick={() => setActivePage('home')}>
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F59E0B] to-[#E08A00] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                    <Zap className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-black text-white tracking-tight block leading-none">
+                      BrightWave
+                    </span>
+                    <span className="text-xs text-white/60 font-medium">Electrical Services</span>
+                  </div>
+                </div>
+
+                <nav className="hidden lg:flex items-center gap-2">
+                  {navigation.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => setActivePage(item.id)}
+                      className={`px-5 py-2.5 text-sm font-semibold rounded-lg transition-all ${
+                        activePage === item.id
+                          ? 'bg-[#F59E0B] text-white shadow-lg shadow-orange-500/30'
+                          : 'text-gray-300 hover:text-white hover:bg-white/10'
+                      }`}
+                    >
+                      {item.name}
+                    </button>
+                  ))}
+                </nav>
+
+                <div className="hidden lg:flex items-center gap-4">
                   <button
-                    key={item.id}
-                    onClick={() => setActivePage(item.id)}
-                    className={`px-5 py-3 rounded-lg font-semibold transition-all min-h-[44px] text-sm ${
-                      activePage === item.id
-                        ? 'bg-[#F59E0B] text-white shadow-lg'
-                        : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
-                    }`}
+                    onClick={() => setActivePage('contact')}
+                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all cursor-pointer hover:scale-105"
                   >
-                    {item.name}
+                    <span className="text-sm font-bold text-white">Get Free Quote</span>
                   </button>
-                ))}
+                  <a
+                    href="tel:02012345678"
+                    className="flex items-center gap-2 bg-[#F59E0B] hover:bg-[#E08A00] text-white font-bold px-6 py-3 rounded-xl transition-all text-sm shadow-xl hover:scale-105"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>020 1234 5678</span>
+                  </a>
+                </div>
+
+                <button
+                  aria-controls="mobile-navigation"
+                  aria-expanded={isMobileMenuOpen}
+                  className="lg:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+                >
+                  <span className="sr-only">Toggle navigation</span>
+                  {isMobileMenuOpen ? (
+                    <X className="w-6 h-6" />
+                  ) : (
+                    <Menu className="w-6 h-6" />
+                  )}
+                </button>
+              </div>
+
+              {/* Mobile Navigation */}
+              <div
+                className={`lg:hidden pb-4 transition-all duration-200 ease-out ${
+                  isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2 overflow-hidden'
+                }`}
+                id="mobile-navigation"
+              >
+                <div className="flex flex-col gap-2 bg-[#14294B] rounded-xl p-4 shadow-lg shadow-black/20">
+                  {navigation.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        setActivePage(item.id);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`w-full px-5 py-3 rounded-lg font-semibold transition-all min-h-[44px] text-sm ${
+                        activePage === item.id
+                          ? 'bg-[#F59E0B] text-white shadow-lg'
+                          : 'bg-white/10 text-gray-200 hover:bg-white/20 hover:text-white'
+                      }`}
+                    >
+                      {item.name}
+                    </button>
+                  ))}
+                  <div className="grid grid-cols-1 gap-2 pt-2 border-t border-white/10 mt-2">
+                    <button
+                      onClick={() => {
+                        setActivePage('contact');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-lg transition-all text-sm font-bold text-white"
+                    >
+                      Get Free Quote
+                    </button>
+                    <a
+                      href="tel:02012345678"
+                      className="flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#E08A00] text-white font-bold px-4 py-3 rounded-lg transition-all text-sm shadow-xl"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <Phone className="w-4 h-4" />
+                      020 1234 5678
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1343,7 +1394,7 @@ export default function BrightWaveElectrical() {
         {/* Footer */}
         <footer className="bg-black text-white py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               <div>
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 rounded-full bg-[#FFA700] flex items-center justify-center mr-3">
@@ -1415,3 +1466,4 @@ export default function BrightWaveElectrical() {
     </>
   );
 }
+

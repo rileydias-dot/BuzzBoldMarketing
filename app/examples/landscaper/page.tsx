@@ -929,11 +929,6 @@ export default function GreenFrameLandscapes() {
             </div>
             <span className="text-sm text-[#2E2E2E]">© 2025 GreenFrame Landscapes. All rights reserved.</span>
           </div>
-          <div className="flex gap-6 text-sm text-[#2E2E2E]">
-            <a href="#" className="hover:text-[#2D6A4F]">Privacy Policy</a>
-            <a href="#" className="hover:text-[#2D6A4F]">Terms of Service</a>
-            <a href="#" className="hover:text-[#2D6A4F]">Cookie Policy</a>
-          </div>
         </div>
       </div>
     </footer>

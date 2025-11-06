@@ -172,24 +172,6 @@ const Footer = () => {
                 href="#"
                 className="text-gray-500 hover:text-white transition-colors"
               >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-white transition-colors"
-              >
-                Terms of Service
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-white transition-colors"
-              >
-                Cookie Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-white transition-colors"
-              >
                 Sitemap
               </a>
             </div>

@@ -1433,38 +1433,6 @@ const FlowPrimePlumbing = () => {
             </section>
           )}
         </main>
-
-        {/* BuzzBold Marketing CTA Section */}
-        <section className="border-t border-gray-200 bg-gradient-to-r from-orange-600/10 via-red-600/10 to-pink-600/10 py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 text-[#111111]">
-              This is an example of what{" "}
-              <span className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">
-                we can build for you
-              </span>
-            </h2>
-            <p className="text-xl text-[#444444] mb-8 max-w-2xl mx-auto">
-              Professional, conversion-focused websites for UK tradesmen and local businesses
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:02012345678"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 min-h-[44px]"
-              >
-                <Phone className="w-5 h-5" />
-                Call us
-              </a>
-              <a
-                href="/#contact"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 text-white font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 min-h-[44px]"
-              >
-                <Mail className="w-5 h-5" />
-                Get Your Free Website Audit
-              </a>
-            </div>
-          </div>
-        </section>
-
         {/* Footer */}
         <footer className="border-t border-gray-200 bg-white py-8">
           <div className="container mx-auto px-4 text-center">
