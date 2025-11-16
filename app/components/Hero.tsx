@@ -80,7 +80,7 @@ const Hero = () => {
             className="mb-6 text-5xl font-black leading-tight text-white md:text-6xl lg:text-7xl xl:text-8xl"
           >
             <span className="inline-block text-white">
-              Build to Dominate.
+              Websites, Google & social that actually bring you jobs in.
             </span>
           </h1>
 
@@ -88,48 +88,43 @@ const Hero = () => {
             ref={subtitleRef}
             className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl lg:text-2xl"
           >
-            We design, build, and optimise websites that help UK trades and service businesses turn browsers into booked
-            jobs.
+            BuzzBold builds high-converting websites, local SEO and social systems for real UK trades and service businesses – plumbers, sparkies, roofers, mechanics and more. Built to get your phone ringing, not to win design awards.
           </p>
 
           <div ref={ctaRef} className="flex w-full flex-col items-center justify-center gap-5 text-base sm:flex-row">
             <button
               onClick={handleCtaClick}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-10 py-4 font-semibold text-black shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)] animate-pulse-glow"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-10 py-4 font-semibold text-white shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)] animate-pulse-glow"
             >
-              Get a free website review
+              <Sparkles className="h-5 w-5" />
+              Book a free discovery call
+            </button>
+            <button
+              onClick={handleServicesClick}
+              className="inline-flex items-center gap-2 text-gray-300 transition-colors duration-200 hover:text-white"
+            >
+              View website & social packages
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
           </div>
 
-          <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-white/12 bg-gradient-to-br from-white/5 to-white/10 p-6 backdrop-blur-sm">
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="mx-auto mt-16 max-w-4xl">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 text-left">
               {[
-                { value: "Local SEO", label: "Built in from day one" },
-                { value: "Quality builds", label: "Polished & professional" },
-                { value: "Transparent", label: "Regular updates & reports" },
-                { value: "UK specialists", label: "Industry-focused team" },
-              ].map((stat, index) => (
+                { icon: "📍", label: "Built to dominate local search & Google Maps" },
+                { icon: "🚀", label: '5 page "Launch Local" & 12 page "Domination" builds' },
+                { icon: "🔧", label: "Made for trades – not big faceless brands" },
+              ].map((item, index) => (
                 <div
-                  key={stat.value}
-                  className="group rounded-xl border border-white/10 bg-gradient-to-br from-[#0b1321] to-[#0f1729] px-4 py-6 text-center transition-all duration-300 hover:border-orange-500/60 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.3)]"
+                  key={item.label}
+                  className="flex items-start gap-3 text-gray-300"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <div className="text-lg font-semibold bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent md:text-xl">{stat.value}</div>
-                  <div className="mt-2 text-xs text-gray-400 md:text-sm group-hover:text-gray-300 transition-colors">{stat.label}</div>
+                  <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                  <span className="text-base md:text-lg">{item.label}</span>
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="mt-10 flex items-center justify-center gap-3 text-sm text-gray-400">
-            <span>Prefer to explore first?</span>
-            <button
-              onClick={handleServicesClick}
-              className="border-b border-transparent text-gray-200 transition-colors duration-200 hover:border-gray-400"
-            >
-              Browse our services
-            </button>
           </div>
         </div>
       </div>

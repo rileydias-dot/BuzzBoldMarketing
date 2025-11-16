@@ -54,12 +54,15 @@ const Header = () => {
           <button
             type="button"
             onClick={() => handleScroll("#home")}
-            className="flex items-center gap-1 text-left transition-transform duration-200 hover:-translate-y-0.5"
+            className="flex flex-col items-start gap-1 text-left transition-transform duration-200 hover:-translate-y-0.5"
           >
             <span className="text-2xl font-bold flex items-center gap-1">
               <Logo size={32} className="inline-block" />
               <span className="gradient-text">Buzz</span>
               <span className="text-white">BoldMarketing</span>
+            </span>
+            <span className="text-xs text-gray-400 font-medium">
+              Websites • Local SEO • Social for UK trades
             </span>
           </button>
 
