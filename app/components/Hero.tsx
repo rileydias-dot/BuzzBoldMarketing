@@ -108,8 +108,8 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="mx-auto mt-16 max-w-4xl">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 text-left">
+          <div className="mx-auto mt-16 max-w-5xl">
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
               {[
                 { icon: "📍", label: "Built to dominate local search & Google Maps" },
                 { icon: "🚀", label: '5 page "Launch Local" & 12 page "Domination" builds' },
@@ -117,11 +117,11 @@ const Hero = () => {
               ].map((item, index) => (
                 <div
                   key={item.label}
-                  className="flex items-start gap-3 text-gray-300"
+                  className="flex items-center gap-3 px-6 py-4 rounded-lg border border-white/20 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.2)]"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <span className="text-2xl flex-shrink-0">{item.icon}</span>
-                  <span className="text-base md:text-lg">{item.label}</span>
+                  <span className="text-sm md:text-base text-gray-200 font-medium">{item.label}</span>
                 </div>
               ))}
             </div>
