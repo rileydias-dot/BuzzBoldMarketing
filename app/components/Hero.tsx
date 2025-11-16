@@ -80,7 +80,7 @@ const Hero = () => {
             className="mb-6 text-5xl font-black leading-tight text-white md:text-6xl lg:text-7xl xl:text-8xl"
           >
             <span className="inline-block text-white">
-              Websites, Google & social that actually bring you jobs in.
+              Build To Dominate
             </span>
           </h1>
 
